@@ -1,0 +1,162 @@
+/* FOOTER */
+@import "footer.css";
+
+/* main container */
+body{
+    background-color: #E3E7E8;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-container{
+    flex: 50%;
+}
+.box{
+    margin: 30% auto;
+}
+.box .list{
+    width: 400px;
+    margin: auto;
+}
+.box h1{
+    font-size: 50px;
+    text-align: center;
+}
+.box ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 20px;
+}
+i, li a:hover{
+	font-weight: 600;
+}
+.box a{
+    color: black;
+    text-decoration: none;
+}
+.list .fa-regular, .fa-brands{
+    width: 35px;
+    padding: 0 0 20px;  
+    font-size: 1.5em;
+}
+
+.list i{
+    color: black;
+}
+
+
+.right-container{
+    flex: 50%;
+}
+form{
+    border: 1px solid black;
+    width: 450px;
+    padding: 30px;
+    margin: 10% auto;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+label{
+    font-size: 17px;
+    
+}
+label[for=checkbox]{
+    font-size: 12px;
+    padding: 30px 0;
+	cursor: pointer;
+}
+select{
+    width: 390px;
+    height: 35px;
+    margin: 10px 0;
+}
+input[type=email],[type=text]{
+    width: 390px;
+    height: 30px;
+    margin: 7px 0;
+    font-size: 15x;
+}
+.btn{
+    width: 389px;
+    margin: 7px 0;
+    padding: 3px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+textarea{
+    width: 389px;
+    margin: 7px 0;
+}
+
+/* MODAL - OPEN WHEN SUBMIT BUTTON CLICKED */
+.modal-container{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.modal h4{
+    text-align: center;
+}
+.modal p{
+    text-align: center;
+    color: black;
+}
+.modal button{
+    display: block;
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+    background-color: #825433;
+    border: none;
+    border-radius: 10px;
+    color: white
+}
+
+form .error{
+	display: flex;
+	align-items: center;
+	display: inline-block;
+}
+
+.error i, .error-text{
+	color: #d93025;
+	font-size: 14px;
+	/* font-family: Poppins Light; */
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px){
+    .main{
+        flex-direction: row;
+    }
+    .left-container{
+        height: 450px;
+    }
+
+}
