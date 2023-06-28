@@ -1,6 +1,5 @@
-/* css import */
+/* css */
 @import "footer.css";
-
 
 /* font-family */
 @font-face{
@@ -17,7 +16,7 @@
 	src: url(/font/Poppins-Light.ttf) format('truetype');
 }
 
-/* body */
+/*  */
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -86,6 +85,7 @@ body{
 	width: 20px;
 	margin-left: -20px;
 	margin-top: -15px;
+	/* background-color: brown; */
 }
 
 .quantity{
@@ -93,6 +93,20 @@ body{
 	cursor: pointer;
 }
 
+
+/* .icons{
+    flex: 25%;
+    margin: auto;
+}
+.icons a{
+    padding: 0 10px;
+}
+.icons img{
+    width: 30px;
+}
+.social img{
+    width: 35px;
+} */
 
 
 @media screen and (max-width: 500px){

@@ -1,0 +1,108 @@
+footer{
+    width: 100%;
+    background-color: rgb(17, 17, 17, 0.5);
+    backdrop-filter: blur(5px);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.one{
+    flex: 25%;
+    display: flex;
+}
+.footer-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.footer-logo img{
+    height: 100px;
+}
+.two{
+    flex: 25%;
+    padding: 50px;
+    /* color: rgb(255, 255, 255,0.5); */
+
+}
+.two a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+    color: white;
+    /* color: rgb(255, 255, 255,0.5); */
+}
+.three{
+    flex: 25%;   
+    padding: 50px; 
+    /* color: rgb(255, 255, 255,0.5); */
+}
+.three a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+    color: white;
+    /* color: rgb(255, 255, 255,0.5); */
+}
+.four{
+    padding: 50px;
+    flex: 25%;
+    /* color: rgb(255, 255, 255,0.5); */
+}
+.footer h3, p{
+    color: white;
+}
+.subscribe .newsletter{
+    width: 170px;
+    height: 35px;
+}
+button{
+    height: 35px;
+    width: 100px;
+}
+.social .fa-regular, .fa-brands{
+    width: 35px;
+    padding: 0 0 20px;
+    color: white;
+    font-size: 1.5em;  
+}
+.last{
+    /* background-color: rgb(17, 17, 17, 0.5); */
+    padding: 5px;
+    color: rgb(255, 255, 255,0.4);
+    text-align: center;
+    font-size: 12px;
+}
+.last p{
+    font-size: 15px;
+}
+.social{
+    margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px){
+    .footer .one{
+        display: none;
+    }
+}
+@media screen and (max-width: 630px){
+    .footer{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 597px){
+    .footer{
+        height: 430px;
+    }
+    .two, .three, .four{
+        height: 250px;
+    }
+    .four{
+        display: flex;
+        justify-content: center;
+    
+    }
+}
